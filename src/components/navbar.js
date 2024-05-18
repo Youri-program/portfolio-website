@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav>
       <div className="logo">
-        <h1>Youri van der Meulen</h1>
+        <h1 class="flex items-center justify-center text-3xl">Youri van der Meulen</h1>
       </div>
       <Link href="/">Home</Link>
       <Link href="/project01">Project01</Link>
