@@ -25,33 +25,86 @@ const menuItems = [
     subItems: [],
   },
   {
-    name: 'Project 1',
-    href: '/project01',
+    name: 'Portfolio Website',
+    href: '/portfolio-website',
     subItems: [
-      { name: 'Eisen en Wensen', href: '/project01/eisen-en-wensen' },
-      { name: 'Ontwerpt Software', href: '/project01/ontwerpt-software' },
+      { name: 'Eisen en Wensen', href: '/portfolio-website/eisen-en-wensen' },
+      { name: 'Ontwerpt Software', href: '/portfolio-website/ontwerpt-software' },
+      { name: 'Realiseert Software', href: '/portfolio-website/realiseert-software' },
+      { name: 'Test Software', href: '/portfolio-website/test-software' },
+      { name: 'Doet Verbetervoorstellen', href: '/portfolio-website/doet-verbetervoorstellen' },
+      { name: 'Reflectie', href: '/portfolio-website/reflectie' },
     ],
   },
   {
-    name: 'Project 2',
-    href: '/project02',
+    name: 'Kembit Stage',
+    href: '/kembit',
     subItems: [
-      { name: 'Eisen en Wensen', href: '/project02/eisen-en-wensen' },
-      { name: 'Ontwerpt Software', href: '/project02/ontwerpt-software' },
+      { name: 'Eisen en Wensen', href: '/kembit/eisen-en-wensen' },
+      { name: 'Ontwerpt Software', href: '/kembit/ontwerpt-software' },
+      { name: 'Realiseert Software', href: '/kembit/realiseert-software' },
+      { name: 'Test Software', href: '/kembit/test-software' },
+      { name: 'Doet Verbetervoorstellen', href: '/kembit/doet-verbetervoorstellen' },
+      { name: 'Voert Overleg', href: '/kembit/voert-overleg' },
+      { name: 'Presenteren', href: '/kembit/presenteren' },
+      { name: 'Reflectie', href: '/kembit/reflectie' },
     ],
   },
+  {
+    name: 'SmartHub',
+    href: '/smarthub',
+    subItems: [
+      { name: 'Eisen en Wensen', href: '/smarthub/eisen-en-wensen' },
+      { name: 'Ontwerpt Software', href: '/smarthub/ontwerpt-software' },
+      { name: 'Voert Overleg', href: '/smarthub/voert-overleg' },
+      { name: 'Presenteren', href: '/smarthub/presenteren' },
+      { name: 'Reflectie', href: '/smarthub/reflectie' },
+    ],
+  },
+  {
+    name: 'Mees',
+    href: '/mees',
+    subItems: [
+      { name: 'Eisen en Wensen', href: '/mees/eisen-en-wensen' },
+      { name: 'Ontwerpt Software', href: '/mees/ontwerpt-software' },
+      { name: 'Voert Overleg', href: '/mees/voert-overleg' },
+      { name: 'Presenteren', href: '/mees/presenteren' },
+      { name: 'Reflectie', href: '/mees/reflectie' },
+    ],
+  },
+  {
+    name: 'Security Chief',
+    href: '/security-chief',
+    subItems: [
+      { name: 'Eisen en Wensen', href: '/security-chief/eisen-en-wensen' },
+      { name: 'Ontwerpt Software', href: '/security-chief/ontwerpt-software' },
+      { name: 'Reflectie', href: '/security-chief/reflectie' },
+    ],
+  },
+  // {
+  //   name: 'Extra Project',
+  //   href: '/extra-project',
+  //   subItems: [
+  //     { name: 'Eisen en Wensen', href: '/extra-project/eisen-en-wensen' },
+  //     { name: 'Ontwerpt Software', href: '/extra-project/ontwerpt-software' },
+  //     { name: 'Realiseert Software', href: '/extra-project/realiseert-software' },
+  //     { name: 'Test Software', href: '/extra-project/test-software' },
+  //     { name: 'Doet Verbetervoorstellen', href: '/extra-project/doet-verbetervoorstellen' },
+  //     { name: 'Reflectie', href: '/extra-project/reflectie' },
+  //   ],
+  // },
   {
     name: 'Kerntaak 1',
-    href: '/kerntaak01',
+    href: '/kerntaak-1',
     subItems: [], // Voeg hier subpagina's toe als dat nodig is
   },
   {
     name: 'Kerntaak 2',
-    href: '/kerntaak02',
+    href: '/kerntaak-2',
     subItems: [], // Voeg hier subpagina's toe als dat nodig is
   },
   {
-    name: 'About Me',
+    name: 'About',
     href: '/about',
     subItems: [],
   },
@@ -72,7 +125,7 @@ export default function SideBarLeft() {
   };
 
   return (
-    <nav className="h-screen flex flex-col bg-gray-800 text-white w-64 p-4">
+    <nav className="h-screen flex flex-col bg-blue-800 text-white w-64 p-4">
       {menuItems.map((item) => (
         <div key={item.name}>
           <button

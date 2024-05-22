@@ -1,14 +1,13 @@
 import React from 'react';
 
-const Project01 = () => {
+const presenteren = () => {
   return (
     <div>
         <h1 className="mb-8 text-2xl space-mono-regular tracking-tighter">
-            Project 'Portfolio Website'
+            Ontwerpt Software
         </h1>
-        <p>This is the content for Project 01.</p>
+        <p>This is the content for Ontwerpt Software.</p>
     </div>
   );
 };
-
-export default Project01;
+export default presenteren;

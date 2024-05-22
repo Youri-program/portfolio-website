@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Project02 = () => {
+const smartHub = () => {
   return (
     <div>
       <h1>Project 02</h1>
@@ -9,4 +9,4 @@ const Project02 = () => {
   );
 };
 
-export default Project02;
+export default smartHub;

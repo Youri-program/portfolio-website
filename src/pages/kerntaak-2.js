@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Kerntaak02 = () => {
+const kernTaak2 = () => {
   return (
     <div>
       <h1>Kerntaak 2</h1>
@@ -9,4 +9,4 @@ const Kerntaak02 = () => {
   );
 };
 
-export default Kerntaak02;
+export default kernTaak2;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OntwerptSoftware = () => {
+const presenteren = () => {
   return (
     <div>
         <h1 className="mb-8 text-2xl space-mono-regular tracking-tighter">
@@ -10,4 +10,4 @@ const OntwerptSoftware = () => {
     </div>
   );
 };
-export default OntwerptSoftware;
+export default presenteren;
