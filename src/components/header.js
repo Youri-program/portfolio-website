@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function Header() {
     return (
-      <div className="logo">
-        <h1 className="mb-8 flex items-center justify-center text-3xl space-mono-bold">
-        <Link href="/">Youri van der Meulen</Link>
+      <div className="mt-10 mb-4 ml-4 flex  w-full">
+        <h1 className="text-4xl font-medium">
+          <Link href="/"></Link>
         </h1>
       </div>
     );

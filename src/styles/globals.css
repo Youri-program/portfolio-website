@@ -32,7 +32,7 @@ body {
   }
 }
 
-/* Space Mono: CSS classes */
+/* Space Mono Font: CSS classes */
 .space-mono-regular {
   font-family: "Space Mono", monospace;
   font-weight: 400;
@@ -53,6 +53,35 @@ body {
 
 .space-mono-bold-italic {
   font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Playful Display Font: CSS classes */
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.playfair-display-bold {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.playfair-display-italic {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.playfair-display-bold-italic {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
   font-weight: 700;
   font-style: italic;
 }

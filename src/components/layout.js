@@ -4,19 +4,19 @@ import Header from './header'
  
 // export default function Layout({ children }) {
 //   return (
-//     <html
-//       lang="en"
-//     >
-//       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-//         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-//           <Header />
-//           <SideBarLeft />
-//           {children}
+//     <div className="flex">
+//       <SideBarLeft />
+//       <div className="flex flex-col flex-1">
+//         <Header />
+//         <div className="antialiased max-w-2xl lg:mx-16 flex flex-col flex-1">
+//           <main className="flex flex-col flex-1 p-4 mt-16">
+//             {children}
+//           </main>
 //           <Footer />
-//         </main>
-//       </body>
-//     </html>
-//   )
+//         </div>
+//       </div>
+//     </div>
+//   );
 // }
 
 
@@ -24,7 +24,7 @@ export default function Layout({ children }) {
   return (
     <div className="flex">
       <SideBarLeft />
-      <div className="flex flex-col flex-1">
+      <div className="antialiased max-w-2xl lg:mx-auto  flex flex-col flex-1">
         <Header />
         <main className="flex flex-col flex-1 p-4">
           {children}
