@@ -17,7 +17,7 @@ export default function Home() {
       </p>
       <p className="mb-4">
         {`Begin simpelweg links om te navigeren door de lijst van projecten, daarnaast vind je bij de kerntaken
-        een makkelijk overzicht van alle bijhorende werkprocessen. Veel plezier met rondkijken!`}
+        een makkelijk overzicht (concept) van alle bijhorende werkprocessen. Veel plezier met rondkijken!`}
       </p>
       <hr className="my-8" />
 

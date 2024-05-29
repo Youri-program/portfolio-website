@@ -1,13 +1,33 @@
 import React from 'react';
+import Link from 'next/link' 
 
 const doetVerbetervoorstellen = () => {
   return (
-    <div>
-        <h1 className="mb-8 text-2xl space-mono-regular tracking-tighter">
-            Ontwerpt Software
-        </h1>
-        <p>This is the content for Ontwerpt Software.</p>
-    </div>
+    <section className="">
+
+      <h1 className="mb-8 text-3xl space-mono-bold tracking-tighter">
+        Doet Verbetervoorstellen
+      </h1>
+      <p className="mb-4">
+        {``}
+      </p>
+      <hr className="my-8" />
+
+      <div className="mb-8">
+        <h2 id="projectgroep" className="text-2xl space-mono-bold mb-4">
+          <a href="#projectgroep" className="anchor">Verbetervoorstellen</a>
+        </h2>
+        <p className="mb-4">
+          Nadat de resulaten binnenzijn is het handig om mislukte tests te verbeteren in hun werking. 
+          Daarom is er een document gemaakt waar deze scenario's een realiseerbaar voorstel krijgt. 
+          Hierbij wordt geanalyseerd naar mogelijke aanpassingen en een bijhorende planning gemaakt 
+          waarbij rekening wordt gehouden met haalbaarheid.
+        </p>
+        <p className="mb-4">
+          Bekijk hier de <Link href="https://eduofficenl-my.sharepoint.com/:w:/g/personal/501077_vistacollege_nl/EZWXphY4AzNKm19eO4ZwEHoBd4j0aQewRAmTS8r0MeM7Kw?e=6RtjbS" className="inline-button">Verbetervoorstellen.</Link>
+        </p>
+      </div>
+    </section>
   );
 };
 export default doetVerbetervoorstellen;
