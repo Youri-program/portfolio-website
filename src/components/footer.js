@@ -1,3 +1,5 @@
+import React, { useEffect, useState } from 'react';
+
 function ArrowIcon() {
   return (
     <svg
@@ -12,7 +14,26 @@ function ArrowIcon() {
         fill="currentColor"
       />
     </svg>
-  )
+  );
+}
+
+function CurrentTime() {
+  const [currentTime, setCurrentTime] = useState('');
+
+  useEffect(() => {
+    const updateCurrentTime = () => {
+      const now = new Date();
+      const formattedTime = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
+      setCurrentTime(formattedTime);
+    };
+
+    updateCurrentTime(); // Set the initial time
+    const interval = setInterval(updateCurrentTime, 1000); // Update time every second
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return <>AMS {currentTime}</>;
 }
 
 export default function Footer() {
@@ -53,9 +74,12 @@ export default function Footer() {
           </a>
         </li>
       </ul>
-      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
+      <p className="mt-4 text-neutral-600 dark:text-neutral-300">
+        <CurrentTime />
+      </p>
+      <p className="mt-4 text-neutral-600 dark:text-neutral-300">
         © {new Date().getFullYear()} Youri van der Meulen
       </p>
     </footer>
-  )
+  );
 }

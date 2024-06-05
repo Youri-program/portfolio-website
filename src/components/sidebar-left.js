@@ -54,7 +54,7 @@ const menuItems = [
       { name: '- Ontwerpt Software', href: '/mees/ontwerpt-software' },
       { name: '- Voert Overleg', href: '/mees/voert-overleg' },
       { name: '- Presenteren', href: '/mees/presenteren' },
-      //{ name: '- Reflectie', href: '/mees/reflectie' },
+      { name: '- Reflectie', href: '/mees/reflectie' },
     ],
   },
   // {
@@ -70,24 +70,24 @@ const menuItems = [
     name: 'Extra Project',
     href: '/extra-project',
     subItems: [
-      { name: '- Eisen en Wensen', href: '/extra-project/eisen-en-wensen' },
-      { name: '- Ontwerpt Software', href: '/extra-project/ontwerpt-software' },
+      //{ name: '- Eisen en Wensen', href: '/extra-project/eisen-en-wensen' },
+      //{ name: '- Ontwerpt Software', href: '/extra-project/ontwerpt-software' },
       { name: '- Realiseert Software', href: '/extra-project/realiseert-software' },
       { name: '- Test Software', href: '/extra-project/test-software' },
       { name: '- Doet Verbetervoorstellen', href: '/extra-project/doet-verbetervoorstellen' },
-      { name: '- Reflectie', href: '/extra-project/reflectie' },
+      //{ name: '- Reflectie', href: '/extra-project/reflectie' },
     ],
   },
-  {
-    name: 'Kerntaak 1',
-    href: '/kerntaak1',
-    subItems: [], // Voeg hier subpagina's toe als dat nodig is
-  },
-  {
-    name: 'Kerntaak 2',
-    href: '/kerntaak2',
-    subItems: [], // Voeg hier subpagina's toe als dat nodig is
-  },
+  // {
+  //   name: 'Kerntaak 1',
+  //   href: '/kerntaak1',
+  //   subItems: [], // Voeg hier subpagina's toe als dat nodig is
+  // },
+  // {
+  //   name: 'Kerntaak 2',
+  //   href: '/kerntaak2',
+  //   subItems: [], // Voeg hier subpagina's toe als dat nodig is
+  // },
   {
     name: 'About',
     href: '/about',

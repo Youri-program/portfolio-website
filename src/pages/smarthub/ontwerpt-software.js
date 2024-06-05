@@ -63,8 +63,10 @@ const ontwerptSoftware = () => {
         </p>
         <img src="\images\feedbackfosmarthub.png" alt="Vercel" className="rounded mb-4" />       
         <p className="mb-4">
-          Bekijk de tweede versie van het <Link href=" " className="inline-button">Functioneel Ontwerp</Link> hier.
+          Bekijk de tweede versie van het <Link href="https://eduofficenl-my.sharepoint.com/:b:/g/personal/501077_vistacollege_nl/EWOFQ0VCbFVNqn6nfwJtQCEBnmTkAASmk1pLjZ_fam1OAw?e=lrt2H1" className="inline-button">Functioneel Ontwerp</Link> hier.
         </p>
+        <img src="\images\usecaseadmin2.png" alt="Vercel" className="rounded mb-4" />       
+        <img src="\images\usecasehoofdredacteur2.png" alt="Vercel" className="rounded mb-4" />
       </div>
 
       <hr className="my-8" />

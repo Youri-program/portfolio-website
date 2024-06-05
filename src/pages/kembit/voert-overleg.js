@@ -35,6 +35,9 @@ const voertOverleg = () => {
           en onze stagebegeleider. Om elkaar op te hoogte te houden waar wij inmiddels staan. Hier wordt eventuele
           voortgang maar ook knelpunten afgestemd. 
         </p>
+        <h3 id="projectgroep" className="text-2xl space-mono-bold mb-4">
+          <a href="#projectgroep" className="anchor">Afspraken:</a>
+        </h3>
         <p className="mb-4">
           Uiteindelijk zijn we op 2 concepten gekomen die we zouden kunnen uittesten en 
           wellicht dit probleem zou kunnen oplossen. We hebben afgesproken dat we vanuit hier 
