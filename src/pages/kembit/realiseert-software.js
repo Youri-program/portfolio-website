@@ -39,12 +39,13 @@ const realiseertSoftware = () => {
           klaar waren met een user story verschoven wij deze op het kanban bord naar pending, om te wachten 
           op review van mijn stagebegeleider.
         </p>
+        <img src="\images\AzureDevOpsBoard.png" alt="Vercel" className="rounded mb-4" />
+        <img src="\images\AzureUserStoriesBoard.png" alt="Vercel" className="rounded mb-4" />
         <p className="mb-4">
           Om deze voortgang niet te verliezen heb ik gebruik gemaakt van GitKraken om mijn code te pushen en te committen,
           GitKraken is een ander alternatief voor GitHub, het idee is hetzelfde, je werkt tenslotte met Git.
         </p>
-        <img src="\images\AzureDevOpsBoard.png" alt="Vercel" className="rounded mb-4" />
-        <img src="\images\AzureUserStoriesBoard.png" alt="Vercel" className="rounded mb-4" />
+        <img src="\images\kembitcommits.png" alt="Vercel" className="rounded mb-4" />
       </div>
 
       <hr className="my-8" /> {/* Horizontale lijn */}
