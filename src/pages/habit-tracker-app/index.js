@@ -14,9 +14,10 @@ const projectPortfolioWebsite = () => {
          bijwerken, afvinken en verwijderen van gewoonten, evenals een visuele heatmap die de voortgang
           toont. Data wordt veilig opgeslagen en blijft behouden bij het sluiten en heropenen van de app.
            Programmeertalen en technieken die zijn gebruikt voor dit project zijn Flutter, Dart en 
-           de Hive Database. Dit project wordt op dit moment vooral gebruikt voor het testen 
+           de Hive Database (voor locale storage). Dit project wordt op dit moment vooral gebruikt voor het testen 
            van een applicatie als doeleinden, bij de realisatie heb ik een tiental User Stories 
-           gemaakt die hier terug te vinden zullen zijn.`}
+           gemaakt die hier terug te vinden zullen zijn, een deel van deze realisatie is een 
+           langere tijd geleden al gebeurd.`}
       </p>
       <p className="mb-4">
           Bekijk hier de <Link href="https://eduofficenl-my.sharepoint.com/:w:/g/personal/501077_vistacollege_nl/Ealgg5_KeCxLv5I77NK8yFoB-3xRoHKha5VTzz4ov1Bzeg?e=yZKjnh" className="inline-button">User Stories</Link> die gebruikt zijn bij realisatie van dit project.

@@ -64,12 +64,18 @@ const realiseertSoftware = () => {
           Bekijk de <Link href="https://github.com/Youri-program/stage-code-werk" className="inline-button">code op Github</Link> hier.
         </p>
         <img src="\images\dotnetcodekembit.png" alt="Vercel" className="rounded mb-4" />
+        <p className="mb-4">
+          Hier zie een stukje code van gebruik van een try catch. In de code zelf kun je CRUD functies uitvoeren, als er een error ontstaat in de code vangt de try catch dit op.
+        </p>
         <img src="\images\dotnedcodekembit2.png" alt="Vercel" className="rounded mb-4" />
         <img src="\images\dotnetfeeder.png" alt="Vercel" className="rounded mb-4" />
         <img src="\images\dotnetfeeder2.png" alt="Vercel" className="rounded mb-4" />
         <img src="\images\dotnetfeeder3.png" alt="Vercel" className="rounded mb-4" />
         <img src="\images\monitorclientkembit.png" alt="Vercel" className="rounded mb-4" />
         <img src="\images\monitorclientkembit2.png" alt="Vercel" className="rounded mb-4" />
+        <p className="mb-4">
+          Bekijk de code in werking <Link href="https://eduofficenl-my.sharepoint.com/:v:/g/personal/501077_vistacollege_nl/EdJ-mXTdn_BOrrPVaJUSTBEBug8nQH8MM2PcaawwIyE60w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=esPdDe" className="inline-button">hier</Link>.
+        </p>
         <img src="\images\reacterrorhandler.png" alt="Vercel" className="rounded mb-4" />
       </div>
     </section>
