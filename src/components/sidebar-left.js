@@ -72,7 +72,7 @@ const menuItems = [
     subItems: [
       //{ name: '- Eisen en Wensen', href: '/extra-project/eisen-en-wensen' },
       //{ name: '- Ontwerpt Software', href: '/extra-project/ontwerpt-software' },
-      { name: '- Realiseert Software', href: '/habit-tracker-appp/realiseert-software' },
+      //{ name: '- Realiseert Software', href: '/habit-tracker-appp/realiseert-software' },
       { name: '- Test Software', href: '/habit-tracker-app/test-software' },
       { name: '- Doet Verbetervoorstellen', href: '/habit-tracker-app/doet-verbetervoorstellen' },
       //{ name: '- Reflectie', href: '/extra-project/reflectie' },
