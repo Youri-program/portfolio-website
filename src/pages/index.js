@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
@@ -12,14 +13,36 @@ export default function Home() {
         />
       </Head>
 
-      <article className="space-y-8">
-        {/* Main statement */}
-        <h1 className="font-serif text-heading text-3xl md:text-4xl leading-snug font-normal">
-          I build AI systems for environments{' '}
-          <span className="italic">where failure isn't an option.</span>
-        </h1>
+      <article className="space-y-10">
+        {/* Photo + headline row */}
+        <div className="flex flex-col-reverse gap-8 sm:flex-row sm:items-start sm:justify-between">
+          {/* Text side */}
+          <div className="space-y-4 flex-1">
+            <h1 className="font-serif text-heading text-3xl md:text-4xl leading-snug font-normal">
+              I build AI systems for environments{' '}
+              <span className="italic">where failure isn't an option.</span>
+            </h1>
+            <p className="text-muted text-sm leading-relaxed">
+              Data Science & AI student · Zuyd University · Maastricht
+            </p>
+          </div>
 
-        {/* Intro */}
+          {/* Photo */}
+          <div className="shrink-0">
+            <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border border-border">
+              <Image
+                src="/images/youri.jpeg"
+                alt="Youri van der Meulen"
+                fill
+                className="object-cover object-top"
+                sizes="112px"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Intro paragraphs */}
         <div className="space-y-5 text-[15px] leading-relaxed text-text/80">
           <p>
             I'm Youri, a Data Science & AI student at Zuyd University of Applied Sciences

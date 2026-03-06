@@ -52,7 +52,6 @@ export default function About() {
         <section className="space-y-6">
           <h2 className="font-serif text-heading text-lg font-normal">Education</h2>
           <div className="space-y-8">
-
             <EducationItem
               degree="Applied Data Science & Artificial Intelligence"
               level="Bachelor of Science"
@@ -61,7 +60,6 @@ export default function About() {
               period="2024 — present"
               description="After completing my studies in software development, I began a new journey in Applied Data Science & AI to advance my knowledge of machine learning, data analysis, and AI-based solutions. This program builds on my coding background and deepens my preparation for the development of intelligent systems — with the explicit intention to apply these skills in actual, real-world environments."
             />
-
             <EducationItem
               degree="Software Development MBO 4"
               level="Cum Laude"
@@ -70,7 +68,6 @@ export default function About() {
               period="2020 — 2024"
               description="A specialist four-year programme focused on the full software development lifecycle. Covered languages and tools including Python, JavaScript, C#, and SQL, alongside professional skills and Agile methodology. Graduated cum laude."
             />
-
           </div>
         </section>
 
@@ -80,28 +77,58 @@ export default function About() {
         <section className="space-y-6">
           <h2 className="font-serif text-heading text-lg font-normal">Experience</h2>
           <div className="space-y-8">
-
             <ExperienceItem
               title="Software Developer Intern"
               company="Kembit"
               period="Aug 2022 — Jul 2023"
               description="Worked on a real-time monitoring tool for catching and routing errors across multiple platforms. The stack included .NET Core, TypeScript, Azure DevOps, and Docker. The team operated in Scrum, with weekly sprints and structured code reviews — my first experience building production software in a professional engineering environment."
             />
-
           </div>
         </section>
 
         <hr className="border-border" />
 
-        {/* Skills */}
+        {/* Skills — focused on two core areas */}
         <section className="space-y-5">
-          <h2 className="font-serif text-heading text-lg font-normal">Skills & Tools</h2>
-          <div className="grid grid-cols-1 gap-6 text-sm sm:grid-cols-2">
-            <SkillGroup label="AI & Data Science" skills={['Python', 'Machine Learning', 'CatBoost / LightGBM / XGBoost', 'TensorFlow / Keras', 'Computer Vision (YOLO, OpenCV)', 'Data Engineering & ETL']} />
-            <SkillGroup label="Infrastructure & Cloud" skills={['AWS (Lambda, DynamoDB, S3, Cognito)', 'Azure & Azure DevOps', 'Docker & Docker Compose', 'PostgreSQL / Citus', 'CI/CD (GitHub Actions)']} />
-            <SkillGroup label="Software Development" skills={['JavaScript / TypeScript', 'React & Next.js', 'Java Spring (MVC, Security, JPA)', '.NET Core / C#', 'REST API design', 'Git & GitHub']} />
-            <SkillGroup label="Embedded & Edge" skills={['NVIDIA Jetson Orin Nano', 'TensorRT optimisation', 'WebRTC', 'Servo motor control', 'Edge AI deployment']} />
+          <h2 className="font-serif text-heading text-lg font-normal">Skills</h2>
+          <p className="text-muted text-sm leading-relaxed max-w-md">
+            Two areas where I've invested the most depth — the rest is supporting context.
+          </p>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+
+            <SkillGroup
+              label="Computer Vision & Edge AI"
+              description="Deploying inference on constrained hardware is where I've spent the most time. From model selection to TensorRT optimisation to live streaming — the full pipeline, not just the notebook."
+              skills={[
+                { name: 'YOLO (v5, v11)', level: 'confident' },
+                { name: 'OpenCV', level: 'confident' },
+                { name: 'TensorRT optimisation', level: 'working' },
+                { name: 'NVIDIA Jetson / Edge deployment', level: 'working' },
+                { name: 'WebRTC (live video streaming)', level: 'working' },
+                { name: 'Docker & containerisation', level: 'confident' },
+              ]}
+            />
+
+            <SkillGroup
+              label="Full-Stack Development"
+              description="A solid engineering foundation built over four years of study and a year of professional internship. I can build, deploy, and maintain production-grade applications end to end."
+              skills={[
+                { name: 'JavaScript / TypeScript', level: 'confident' },
+                { name: 'React & Next.js', level: 'confident' },
+                { name: 'Java Spring (MVC, Security, JPA)', level: 'confident' },
+                { name: 'REST API design', level: 'confident' },
+                { name: 'CI/CD (GitHub Actions, Azure DevOps)', level: 'working' },
+                { name: 'AWS & Azure cloud deployment', level: 'working' },
+              ]}
+            />
+
           </div>
+
+          {/* Supporting skills note */}
+          <p className="text-muted text-xs leading-relaxed pt-2 border-t border-border">
+            Supporting experience in: Python & ML (CatBoost, LightGBM, TensorFlow), data engineering
+            (PostgreSQL, Citus, ETL pipelines), and security compliance (GDPR, ISO 27799).
+          </p>
         </section>
 
       </article>
@@ -140,14 +167,20 @@ function ExperienceItem({ title, company, period, description }) {
   )
 }
 
-function SkillGroup({ label, skills }) {
+function SkillGroup({ label, description, skills }) {
   return (
-    <div className="space-y-2">
-      <p className="text-muted text-xs uppercase tracking-widest">{label}</p>
-      <ul className="space-y-1">
-        {skills.map(skill => (
-          <li key={skill} className="text-text/70 border-b border-border/50 pb-1">
-            {skill}
+    <div className="space-y-3">
+      <div className="space-y-1">
+        <p className="text-text text-sm font-medium">{label}</p>
+        <p className="text-muted text-xs leading-relaxed">{description}</p>
+      </div>
+      <ul className="space-y-1.5">
+        {skills.map(({ name, level }) => (
+          <li key={name} className="flex items-center justify-between border-b border-border/50 pb-1.5">
+            <span className="text-text/80 text-sm">{name}</span>
+            <span className={`text-xs ${level === 'confident' ? 'text-accent' : 'text-muted'}`}>
+              {level === 'confident' ? 'proficient' : 'working knowledge'}
+            </span>
           </li>
         ))}
       </ul>
