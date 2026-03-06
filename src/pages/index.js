@@ -1,40 +1,59 @@
-import Layout from '../components/layout.js'
-import Link from 'next/link' 
+import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <section className="">
+    <>
+      <Head>
+        <title>Youri van der Meulen</title>
+        <meta
+          name="description"
+          content="Data Science & AI student building systems that work in the real world — edge AI, computer vision, and data-driven decision support."
+        />
+      </Head>
 
-      <h1 className="mb-8 text-3xl space-mono-bold tracking-tighter">
-        Hey<span role="img" aria-label="waving hand">👋</span>, welkom op Youri's portfolio!
-      </h1>
-      <p className="mb-4">
-        {`Een enthousiaste, aanstormende Software Developer. Deze website heb ik gemaakt voor mijn 
-        eindexamen en hier vind je een verzameling van al mijn projecten en bijhorende materialen. Van 
-        creatieve coderingen en slimme oplossingen tot aan het werken in Agile-methodes en het bezitten
-        van soft-skills, alles wat ik geleerd heb en waar ik trots op ben, 
-        staat hier. Duik in mijn werk en ontdek mijn passie voor technologie en innovatie.`}
-      </p>
-      <p className="mb-4">
-        {`Begin simpelweg links om te navigeren door de lijst van projecten, daarnaast vind je bij de kerntaken
-        een makkelijk overzicht (concept) van alle bijhorende werkprocessen. Veel plezier met rondkijken!`}
-      </p>
-      <hr className="my-8" />
+      <article className="space-y-8">
+        {/* Main statement */}
+        <h1 className="font-serif text-heading text-3xl md:text-4xl leading-snug font-normal">
+          I build AI systems for environments{' '}
+          <span className="italic">where failure isn't an option.</span>
+        </h1>
 
-      <div className="mb-8">
-        <p className="text-lg space-mono-bold mb-2">Gebruikte talen en frameworks:</p>
-        <ul className="list-disc list-inside mb-4">
-          <li>Voor het realiseren van projecten zijn talen gebruikt zoals JavaScript, C# en Dart (Flutter).</li>
-          <li>En andere frameworks, libraries en technologieën zoals WordPress, (Tailwind) CSS, HTML, React, NextJS en .NET.</li>
-        </ul>
-      </div>
-    </section>
-  )
-}
- 
-Home.getLayout = function getLayout(page) {
-  return (
-    <Layout>
-    </Layout>
+        {/* Intro */}
+        <div className="space-y-5 text-[15px] leading-relaxed text-text/80">
+          <p>
+            I'm Youri, a Data Science & AI student at Zuyd University of Applied Sciences
+            in Maastricht. My background is in software development — I graduated cum laude
+            from Vista College before making the move into AI — and that engineering
+            foundation shapes how I approach everything I build.
+          </p>
+          <p>
+            I'm drawn to problems where AI meets the physical world: edge inference on
+            embedded hardware, computer vision in operational environments, data pipelines
+            that real systems depend on. I care about the full stack — from a model running
+            on a Jetson to the cloud backend serving its results — because that's where
+            things actually get hard, and interesting.
+          </p>
+          <p>
+            My particular interest is in defense and security applications: environments
+            where the engineering constraints are real, the stakes are high, and building
+            something that actually works matters more than a benchmark score.
+            I'm looking for an internship where I can contribute to that kind of work.
+          </p>
+        </div>
+
+        <hr className="border-border" />
+
+        {/* Navigation footer */}
+        <div className="text-[14px] text-muted leading-relaxed">
+          See what I've been building →{' '}
+          <Link href="/projects" className="link">projects</Link>
+          {' · '}
+          <Link href="/about" className="link">about me</Link>
+          {' · '}
+          <Link href="/contact" className="link">get in touch</Link>
+        </div>
+      </article>
+    </>
   )
 }
